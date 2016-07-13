@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A492F6551D081720008C3159 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A492F6541D081720008C3159 /* main.m */; };
+		A492F6581D081720008C3159 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A492F6571D081720008C3159 /* AppDelegate.m */; };
+		A492F65B1D081720008C3159 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A492F65A1D081720008C3159 /* RootViewController.m */; };
+		A492F65E1D081720008C3159 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A492F65C1D081720008C3159 /* Main.storyboard */; };
+		A492F6601D081720008C3159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A492F65F1D081720008C3159 /* Assets.xcassets */; };
+		A492F6631D081720008C3159 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A492F6611D081720008C3159 /* LaunchScreen.storyboard */; };
+		A492F66E1D081720008C3159 /* DJISimulatorDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A492F66D1D081720008C3159 /* DJISimulatorDemoTests.m */; };
+		A492F67B1D0817B3008C3159 /* DJISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A492F6791D0817AC008C3159 /* DJISDK.framework */; };
+		A492F67C1D0817B3008C3159 /* DJISDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A492F6791D0817AC008C3159 /* DJISDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A492F6921D0821BA008C3159 /* DemoUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A492F6911D0821BA008C3159 /* DemoUtility.m */; };
+		A4FA3B291D12B3EF00B0DDB5 /* VirtualStickView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FA3B261D12B3EF00B0DDB5 /* VirtualStickView.m */; };
+		A4FA3B2A1D12B3EF00B0DDB5 /* DJISimulatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FA3B281D12B3EF00B0DDB5 /* DJISimulatorViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A492F66A1D081720008C3159 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A492F6481D081720008C3159 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A492F64F1D081720008C3159;
+			remoteInfo = DJISimulatorDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A492F67D1D0817B4008C3159 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A492F67C1D0817B3008C3159 /* DJISDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A492F6501D081720008C3159 /* DJISimulatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DJISimulatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A492F6541D081720008C3159 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A492F6561D081720008C3159 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A492F6571D081720008C3159 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A492F6591D081720008C3159 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		A492F65A1D081720008C3159 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		A492F65D1D081720008C3159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A492F65F1D081720008C3159 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A492F6621D081720008C3159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A492F6641D081720008C3159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A492F6691D081720008C3159 /* DJISimulatorDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DJISimulatorDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A492F66D1D081720008C3159 /* DJISimulatorDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJISimulatorDemoTests.m; sourceTree = "<group>"; };
+		A492F66F1D081720008C3159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A492F6791D0817AC008C3159 /* DJISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DJISDK.framework; sourceTree = "<group>"; };
+		A492F6901D0821BA008C3159 /* DemoUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoUtility.h; sourceTree = "<group>"; };
+		A492F6911D0821BA008C3159 /* DemoUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoUtility.m; sourceTree = "<group>"; };
+		A4FA3B251D12B3EF00B0DDB5 /* VirtualStickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VirtualStickView.h; sourceTree = "<group>"; };
+		A4FA3B261D12B3EF00B0DDB5 /* VirtualStickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VirtualStickView.m; sourceTree = "<group>"; };
+		A4FA3B271D12B3EF00B0DDB5 /* DJISimulatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJISimulatorViewController.h; sourceTree = "<group>"; };
+		A4FA3B281D12B3EF00B0DDB5 /* DJISimulatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJISimulatorViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A492F64D1D081720008C3159 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A492F67B1D0817B3008C3159 /* DJISDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A492F6661D081720008C3159 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A492F6471D081720008C3159 = {
+			isa = PBXGroup;
+			children = (
+				A492F6521D081720008C3159 /* DJISimulatorDemo */,
+				A492F66C1D081720008C3159 /* DJISimulatorDemoTests */,
+				A492F6511D081720008C3159 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A492F6511D081720008C3159 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A492F6501D081720008C3159 /* DJISimulatorDemo.app */,
+				A492F6691D081720008C3159 /* DJISimulatorDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A492F6521D081720008C3159 /* DJISimulatorDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A492F6561D081720008C3159 /* AppDelegate.h */,
+				A492F6571D081720008C3159 /* AppDelegate.m */,
+				A492F6901D0821BA008C3159 /* DemoUtility.h */,
+				A492F6911D0821BA008C3159 /* DemoUtility.m */,
+				A4FA3B251D12B3EF00B0DDB5 /* VirtualStickView.h */,
+				A4FA3B261D12B3EF00B0DDB5 /* VirtualStickView.m */,
+				A492F6591D081720008C3159 /* RootViewController.h */,
+				A492F65A1D081720008C3159 /* RootViewController.m */,
+				A4FA3B271D12B3EF00B0DDB5 /* DJISimulatorViewController.h */,
+				A4FA3B281D12B3EF00B0DDB5 /* DJISimulatorViewController.m */,
+				A492F65C1D081720008C3159 /* Main.storyboard */,
+				A492F65F1D081720008C3159 /* Assets.xcassets */,
+				A492F6611D081720008C3159 /* LaunchScreen.storyboard */,
+				A492F6641D081720008C3159 /* Info.plist */,
+				A492F6781D0817AC008C3159 /* Frameworks */,
+				A492F6531D081720008C3159 /* Supporting Files */,
+			);
+			path = DJISimulatorDemo;
+			sourceTree = "<group>";
+		};
+		A492F6531D081720008C3159 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A492F6541D081720008C3159 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A492F66C1D081720008C3159 /* DJISimulatorDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A492F66D1D081720008C3159 /* DJISimulatorDemoTests.m */,
+				A492F66F1D081720008C3159 /* Info.plist */,
+			);
+			path = DJISimulatorDemoTests;
+			sourceTree = "<group>";
+		};
+		A492F6781D0817AC008C3159 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A492F6791D0817AC008C3159 /* DJISDK.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A492F64F1D081720008C3159 /* DJISimulatorDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A492F6721D081720008C3159 /* Build configuration list for PBXNativeTarget "DJISimulatorDemo" */;
+			buildPhases = (
+				A492F64C1D081720008C3159 /* Sources */,
+				A492F64D1D081720008C3159 /* Frameworks */,
+				A492F64E1D081720008C3159 /* Resources */,
+				A492F67D1D0817B4008C3159 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DJISimulatorDemo;
+			productName = DJISimulatorDemo;
+			productReference = A492F6501D081720008C3159 /* DJISimulatorDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A492F6681D081720008C3159 /* DJISimulatorDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A492F6751D081720008C3159 /* Build configuration list for PBXNativeTarget "DJISimulatorDemoTests" */;
+			buildPhases = (
+				A492F6651D081720008C3159 /* Sources */,
+				A492F6661D081720008C3159 /* Frameworks */,
+				A492F6671D081720008C3159 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A492F66B1D081720008C3159 /* PBXTargetDependency */,
+			);
+			name = DJISimulatorDemoTests;
+			productName = DJISimulatorDemoTests;
+			productReference = A492F6691D081720008C3159 /* DJISimulatorDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A492F6481D081720008C3159 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Demo;
+				TargetAttributes = {
+					A492F64F1D081720008C3159 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					A492F6681D081720008C3159 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = A492F64F1D081720008C3159;
+					};
+				};
+			};
+			buildConfigurationList = A492F64B1D081720008C3159 /* Build configuration list for PBXProject "DJISimulatorDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A492F6471D081720008C3159;
+			productRefGroup = A492F6511D081720008C3159 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A492F64F1D081720008C3159 /* DJISimulatorDemo */,
+				A492F6681D081720008C3159 /* DJISimulatorDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A492F64E1D081720008C3159 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A492F6631D081720008C3159 /* LaunchScreen.storyboard in Resources */,
+				A492F6601D081720008C3159 /* Assets.xcassets in Resources */,
+				A492F65E1D081720008C3159 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A492F6671D081720008C3159 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A492F64C1D081720008C3159 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A492F65B1D081720008C3159 /* RootViewController.m in Sources */,
+				A4FA3B291D12B3EF00B0DDB5 /* VirtualStickView.m in Sources */,
+				A4FA3B2A1D12B3EF00B0DDB5 /* DJISimulatorViewController.m in Sources */,
+				A492F6581D081720008C3159 /* AppDelegate.m in Sources */,
+				A492F6921D0821BA008C3159 /* DemoUtility.m in Sources */,
+				A492F6551D081720008C3159 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A492F6651D081720008C3159 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A492F66E1D081720008C3159 /* DJISimulatorDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A492F66B1D081720008C3159 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A492F64F1D081720008C3159 /* DJISimulatorDemo */;
+			targetProxy = A492F66A1D081720008C3159 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A492F65C1D081720008C3159 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A492F65D1D081720008C3159 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A492F6611D081720008C3159 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A492F6621D081720008C3159 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A492F6701D081720008C3159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A492F6711D081720008C3159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A492F6731D081720008C3159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DJISimulatorDemo/Frameworks",
+				);
+				INFOPLIST_FILE = DJISimulatorDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dji.simulatordemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A492F6741D081720008C3159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DJISimulatorDemo/Frameworks",
+				);
+				INFOPLIST_FILE = DJISimulatorDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dji.simulatordemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A492F6761D081720008C3159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DJISimulatorDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.DJISimulatorDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DJISimulatorDemo.app/DJISimulatorDemo";
+			};
+			name = Debug;
+		};
+		A492F6771D081720008C3159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DJISimulatorDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.DJISimulatorDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DJISimulatorDemo.app/DJISimulatorDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A492F64B1D081720008C3159 /* Build configuration list for PBXProject "DJISimulatorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A492F6701D081720008C3159 /* Debug */,
+				A492F6711D081720008C3159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A492F6721D081720008C3159 /* Build configuration list for PBXNativeTarget "DJISimulatorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A492F6731D081720008C3159 /* Debug */,
+				A492F6741D081720008C3159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A492F6751D081720008C3159 /* Build configuration list for PBXNativeTarget "DJISimulatorDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A492F6761D081720008C3159 /* Debug */,
+				A492F6771D081720008C3159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A492F6481D081720008C3159 /* Project object */;
+}
