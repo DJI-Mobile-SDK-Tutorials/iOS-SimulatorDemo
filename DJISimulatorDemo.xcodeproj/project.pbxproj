@@ -14,11 +14,10 @@
 		A492F6601D081720008C3159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A492F65F1D081720008C3159 /* Assets.xcassets */; };
 		A492F6631D081720008C3159 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A492F6611D081720008C3159 /* LaunchScreen.storyboard */; };
 		A492F66E1D081720008C3159 /* DJISimulatorDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A492F66D1D081720008C3159 /* DJISimulatorDemoTests.m */; };
-		A492F67B1D0817B3008C3159 /* DJISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A492F6791D0817AC008C3159 /* DJISDK.framework */; };
-		A492F67C1D0817B3008C3159 /* DJISDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A492F6791D0817AC008C3159 /* DJISDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A492F6921D0821BA008C3159 /* DemoUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A492F6911D0821BA008C3159 /* DemoUtility.m */; };
 		A4FA3B291D12B3EF00B0DDB5 /* VirtualStickView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FA3B261D12B3EF00B0DDB5 /* VirtualStickView.m */; };
 		A4FA3B2A1D12B3EF00B0DDB5 /* DJISimulatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FA3B281D12B3EF00B0DDB5 /* DJISimulatorViewController.m */; };
+		DB06E0B7E4D0CC2DF40F610E /* libPods-DJISimulatorDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C518C5D84429B5BE525CB11 /* libPods-DJISimulatorDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +37,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A492F67C1D0817B3008C3159 /* DJISDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +44,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9C518C5D84429B5BE525CB11 /* libPods-DJISimulatorDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DJISimulatorDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0365E1E627859A62E912C5B /* Pods-DJISimulatorDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJISimulatorDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DJISimulatorDemo/Pods-DJISimulatorDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A492F6501D081720008C3159 /* DJISimulatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DJISimulatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A492F6541D081720008C3159 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A492F6561D081720008C3159 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,13 +59,13 @@
 		A492F6691D081720008C3159 /* DJISimulatorDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DJISimulatorDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A492F66D1D081720008C3159 /* DJISimulatorDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJISimulatorDemoTests.m; sourceTree = "<group>"; };
 		A492F66F1D081720008C3159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A492F6791D0817AC008C3159 /* DJISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DJISDK.framework; sourceTree = "<group>"; };
 		A492F6901D0821BA008C3159 /* DemoUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoUtility.h; sourceTree = "<group>"; };
 		A492F6911D0821BA008C3159 /* DemoUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoUtility.m; sourceTree = "<group>"; };
 		A4FA3B251D12B3EF00B0DDB5 /* VirtualStickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VirtualStickView.h; sourceTree = "<group>"; };
 		A4FA3B261D12B3EF00B0DDB5 /* VirtualStickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VirtualStickView.m; sourceTree = "<group>"; };
 		A4FA3B271D12B3EF00B0DDB5 /* DJISimulatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJISimulatorViewController.h; sourceTree = "<group>"; };
 		A4FA3B281D12B3EF00B0DDB5 /* DJISimulatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJISimulatorViewController.m; sourceTree = "<group>"; };
+		DC939B20A16373ED16B06447 /* Pods-DJISimulatorDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJISimulatorDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DJISimulatorDemo/Pods-DJISimulatorDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A492F67B1D0817B3008C3159 /* DJISDK.framework in Frameworks */,
+				DB06E0B7E4D0CC2DF40F610E /* libPods-DJISimulatorDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +93,8 @@
 				A492F6521D081720008C3159 /* DJISimulatorDemo */,
 				A492F66C1D081720008C3159 /* DJISimulatorDemoTests */,
 				A492F6511D081720008C3159 /* Products */,
+				A7DC12C4B64457C2E7532422 /* Pods */,
+				DE224C211A7147237237A6DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,9 +150,25 @@
 		A492F6781D0817AC008C3159 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A492F6791D0817AC008C3159 /* DJISDK.framework */,
 			);
 			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7DC12C4B64457C2E7532422 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0365E1E627859A62E912C5B /* Pods-DJISimulatorDemo.debug.xcconfig */,
+				DC939B20A16373ED16B06447 /* Pods-DJISimulatorDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DE224C211A7147237237A6DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C518C5D84429B5BE525CB11 /* libPods-DJISimulatorDemo.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,10 +178,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A492F6721D081720008C3159 /* Build configuration list for PBXNativeTarget "DJISimulatorDemo" */;
 			buildPhases = (
+				AEF30BE5743349A6FE466F25 /* [CP] Check Pods Manifest.lock */,
 				A492F64C1D081720008C3159 /* Sources */,
 				A492F64D1D081720008C3159 /* Frameworks */,
 				A492F64E1D081720008C3159 /* Resources */,
 				A492F67D1D0817B4008C3159 /* Embed Frameworks */,
+				62199DDD795DE50A4EBAFAAE /* [CP] Embed Pods Frameworks */,
+				DCE6007EC61735B359036ED5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,6 +269,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62199DDD795DE50A4EBAFAAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DJISimulatorDemo/Pods-DJISimulatorDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEF30BE5743349A6FE466F25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DCE6007EC61735B359036ED5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DJISimulatorDemo/Pods-DJISimulatorDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A492F64C1D081720008C3159 /* Sources */ = {
@@ -385,13 +454,12 @@
 		};
 		A492F6731D081720008C3159 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0365E1E627859A62E912C5B /* Pods-DJISimulatorDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/DJISimulatorDemo/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = DJISimulatorDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dji.simulatordemo;
@@ -401,13 +469,12 @@
 		};
 		A492F6741D081720008C3159 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC939B20A16373ED16B06447 /* Pods-DJISimulatorDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/DJISimulatorDemo/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = DJISimulatorDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dji.simulatordemo;
@@ -419,6 +486,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DJISimulatorDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.DJISimulatorDemoTests;
@@ -431,6 +499,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DJISimulatorDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.DJISimulatorDemoTests;
