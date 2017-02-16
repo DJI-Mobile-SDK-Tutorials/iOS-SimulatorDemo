@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SZb-7Q-Eec">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SZb-7Q-Eec">
     <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -91,112 +91,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7J7-rI-2Qb">
-                                <rect key="frame" x="0.0" y="40" width="667" height="80"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYU-qP-cgw">
-                                        <rect key="frame" x="8" y="32" width="144" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="144" id="OK4-mK-aZ0"/>
-                                            <constraint firstAttribute="height" constant="40" id="Yt3-Zb-w7p"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <state key="normal" title="EnterVirtualStickControl" backgroundImage="btn">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="onEnterVirtualStickControlButtonClicked:" destination="UE9-2S-TBT" eventType="touchUpInside" id="vqT-FX-Vdk"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yf9-s0-pok">
-                                        <rect key="frame" x="157" y="32" width="143" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="143" id="Kbr-tZ-YGT"/>
-                                            <constraint firstAttribute="height" constant="40" id="byd-Ld-sOJ"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <state key="normal" title="ExitVirtualStickControl" backgroundImage="btn">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="onExitVirtualStickControlButtonClicked:" destination="UE9-2S-TBT" eventType="touchUpInside" id="yh2-jV-tTE"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCY-zR-mfN">
-                                        <rect key="frame" x="419" y="32" width="69" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="69" id="f5Z-VH-WTT"/>
-                                            <constraint firstAttribute="height" constant="40" id="mOa-WS-IGf"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <state key="normal" title="Takeoff" backgroundImage="btn">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="onTakeoffButtonClicked:" destination="UE9-2S-TBT" eventType="touchUpInside" id="hrW-y1-5kS"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hy2-vx-HG5">
-                                        <rect key="frame" x="306" y="32" width="106" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="CLJ-0f-lXz"/>
-                                            <constraint firstAttribute="width" constant="106" id="CqM-yh-les"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <state key="normal" title="Start Simulator" backgroundImage="btn">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="onSimulatorButtonClicked:" destination="UE9-2S-TBT" eventType="touchUpInside" id="w3Q-y9-7b5"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seT-r5-dgk">
-                                        <rect key="frame" x="494" y="32" width="69" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="681-3v-AU1"/>
-                                            <constraint firstAttribute="width" constant="69" id="hJj-lC-azo"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <state key="normal" title="Land" backgroundImage="btn">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="onLandButtonClicked:" destination="UE9-2S-TBT" eventType="touchUpInside" id="o4i-fB-k1k"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="Yf9-s0-pok" firstAttribute="leading" secondItem="cYU-qP-cgw" secondAttribute="trailing" constant="5" id="2JK-zY-l4e"/>
-                                    <constraint firstItem="OCY-zR-mfN" firstAttribute="top" secondItem="7J7-rI-2Qb" secondAttribute="top" constant="32" id="5Ow-Cm-I71"/>
-                                    <constraint firstAttribute="height" constant="80" id="5sQ-Nh-Wov"/>
-                                    <constraint firstItem="cYU-qP-cgw" firstAttribute="leading" secondItem="7J7-rI-2Qb" secondAttribute="leading" constant="8" id="9fc-2L-eVd"/>
-                                    <constraint firstItem="cYU-qP-cgw" firstAttribute="top" secondItem="7J7-rI-2Qb" secondAttribute="top" constant="32" id="DBO-Hb-Fob"/>
-                                    <constraint firstItem="OCY-zR-mfN" firstAttribute="leading" secondItem="hy2-vx-HG5" secondAttribute="trailing" constant="7" id="HJH-iD-lUU"/>
-                                    <constraint firstItem="seT-r5-dgk" firstAttribute="leading" secondItem="OCY-zR-mfN" secondAttribute="trailing" constant="6" id="Tri-RU-fTz"/>
-                                    <constraint firstItem="hy2-vx-HG5" firstAttribute="leading" secondItem="Yf9-s0-pok" secondAttribute="trailing" constant="6" id="bMW-Il-edU"/>
-                                    <constraint firstItem="hy2-vx-HG5" firstAttribute="top" secondItem="7J7-rI-2Qb" secondAttribute="top" constant="32" id="lJp-6V-gfH"/>
-                                    <constraint firstItem="seT-r5-dgk" firstAttribute="top" secondItem="7J7-rI-2Qb" secondAttribute="top" constant="32" id="wul-A1-dYn"/>
-                                    <constraint firstItem="Yf9-s0-pok" firstAttribute="top" secondItem="7J7-rI-2Qb" secondAttribute="top" constant="32" id="y1e-c0-cfw"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jiq-xf-wLf" userLabel="VirtualStick Left" customClass="VirtualStickView">
                                 <rect key="frame" x="10" y="239" width="130" height="128"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="stick_base" translatesAutoresizingMaskIntoConstraints="NO" id="CaB-np-Onp">
-                                        <rect key="frame" x="-0.5" y="0.0" width="129" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="129" height="128"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="128" id="gWR-HS-t99"/>
                                             <constraint firstAttribute="width" constant="129" id="h1u-qF-Q5t"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="stick_normal" translatesAutoresizingMaskIntoConstraints="NO" id="ULj-MH-YYQ">
-                                        <rect key="frame" x="-0.5" y="0.0" width="129" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="129" height="128"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="129" id="5ho-2Q-uNk"/>
                                             <constraint firstAttribute="height" constant="128" id="H8g-A9-UyV"/>
@@ -247,9 +153,87 @@
                                     <outlet property="stickViewBase" destination="IEF-en-zhc" id="Eb9-h2-bgZ"/>
                                 </connections>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYU-qP-cgw">
+                                <rect key="frame" x="8" y="81" width="144" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="144" id="3bj-9R-2om"/>
+                                    <constraint firstAttribute="height" constant="40" id="ofj-ak-M6t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="EnterVirtualStickControl" backgroundImage="btn">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onEnterVirtualStickControlButtonClicked:" destination="UE9-2S-TBT" eventType="touchUpInside" id="vqT-FX-Vdk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yf9-s0-pok">
+                                <rect key="frame" x="157" y="81" width="143" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hHb-Of-rZa"/>
+                                    <constraint firstAttribute="width" constant="143" id="zKf-ee-ltB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="ExitVirtualStickControl" backgroundImage="btn">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onExitVirtualStickControlButtonClicked:" destination="UE9-2S-TBT" eventType="touchUpInside" id="yh2-jV-tTE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hy2-vx-HG5">
+                                <rect key="frame" x="305" y="81" width="106" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106" id="Eap-xN-lsk"/>
+                                    <constraint firstAttribute="height" constant="40" id="GC5-mm-bha"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Start Simulator" backgroundImage="btn">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onSimulatorButtonClicked:" destination="UE9-2S-TBT" eventType="touchUpInside" id="w3Q-y9-7b5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCY-zR-mfN">
+                                <rect key="frame" x="417" y="81" width="69" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ohl-8x-lJ7"/>
+                                    <constraint firstAttribute="width" constant="69" id="myr-Lh-R8M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Takeoff" backgroundImage="btn">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTakeoffButtonClicked:" destination="UE9-2S-TBT" eventType="touchUpInside" id="hrW-y1-5kS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seT-r5-dgk">
+                                <rect key="frame" x="493" y="81" width="69" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4Ig-lX-tvH"/>
+                                    <constraint firstAttribute="width" constant="69" id="zjB-JR-D1g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Land" backgroundImage="btn">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onLandButtonClicked:" destination="UE9-2S-TBT" eventType="touchUpInside" id="o4i-fB-k1k"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simulator State" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="5VF-GW-08j">
-                                <rect key="frame" x="10" y="128" width="651" height="75.5"/>
+                                <rect key="frame" x="8" y="161.5" width="653" height="47"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="rmP-EH-b0j"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -259,16 +243,21 @@
                         <constraints>
                             <constraint firstItem="vGC-vw-sVe" firstAttribute="top" secondItem="YOD-HV-AEC" secondAttribute="bottom" constant="8" id="71D-99-UFV"/>
                             <constraint firstItem="vGC-vw-sVe" firstAttribute="top" secondItem="Jiq-xf-wLf" secondAttribute="bottom" constant="8" id="90H-aH-q6R"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="7J7-rI-2Qb" secondAttribute="trailing" constant="-20" id="CQt-hc-hDj"/>
+                            <constraint firstItem="seT-r5-dgk" firstAttribute="top" secondItem="4hw-zy-M88" secondAttribute="bottom" constant="17" id="BbD-rT-bHx"/>
                             <constraint firstItem="Jiq-xf-wLf" firstAttribute="leading" secondItem="raI-XD-tph" secondAttribute="leadingMargin" constant="-10" id="EV5-xC-5fS"/>
-                            <constraint firstItem="5VF-GW-08j" firstAttribute="leading" secondItem="raI-XD-tph" secondAttribute="leadingMargin" constant="-10" id="KfZ-LE-dBu"/>
-                            <constraint firstItem="7J7-rI-2Qb" firstAttribute="centerX" secondItem="raI-XD-tph" secondAttribute="centerX" id="LwD-gI-KHS"/>
-                            <constraint firstItem="5VF-GW-08j" firstAttribute="top" secondItem="7J7-rI-2Qb" secondAttribute="bottom" constant="8" id="WH8-dT-iXI"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="5VF-GW-08j" secondAttribute="trailing" constant="-14" id="aXX-Vk-Ogu"/>
+                            <constraint firstItem="Yf9-s0-pok" firstAttribute="leading" secondItem="cYU-qP-cgw" secondAttribute="trailing" constant="5" id="FZs-FI-7pW"/>
+                            <constraint firstItem="OCY-zR-mfN" firstAttribute="leading" secondItem="hy2-vx-HG5" secondAttribute="trailing" constant="6" id="Jy1-K9-I5f"/>
+                            <constraint firstItem="Yf9-s0-pok" firstAttribute="top" secondItem="4hw-zy-M88" secondAttribute="bottom" constant="17" id="KSR-tp-bv4"/>
+                            <constraint firstItem="5VF-GW-08j" firstAttribute="leading" secondItem="cYU-qP-cgw" secondAttribute="leading" id="O6Q-5X-FT6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5VF-GW-08j" secondAttribute="trailing" constant="-14" id="TmP-eW-IR4"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="cYU-qP-cgw" secondAttribute="leading" constant="12" id="aXT-0R-POs"/>
+                            <constraint firstItem="hy2-vx-HG5" firstAttribute="top" secondItem="4hw-zy-M88" secondAttribute="bottom" constant="17" id="c5M-a8-5qZ"/>
+                            <constraint firstItem="hy2-vx-HG5" firstAttribute="leading" secondItem="Yf9-s0-pok" secondAttribute="trailing" constant="5" id="e5q-qt-GNt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="YOD-HV-AEC" secondAttribute="trailing" constant="-14" id="fAz-b6-nf3"/>
-                            <constraint firstItem="7J7-rI-2Qb" firstAttribute="top" secondItem="4hw-zy-M88" secondAttribute="bottom" constant="-24" id="goS-dh-FBp"/>
-                            <constraint firstItem="Jiq-xf-wLf" firstAttribute="top" secondItem="5VF-GW-08j" secondAttribute="bottom" constant="35.5" id="ufj-JJ-0Ml"/>
-                            <constraint firstItem="7J7-rI-2Qb" firstAttribute="leading" secondItem="raI-XD-tph" secondAttribute="leadingMargin" constant="-20" id="yBc-34-xGF"/>
+                            <constraint firstItem="seT-r5-dgk" firstAttribute="leading" secondItem="OCY-zR-mfN" secondAttribute="trailing" constant="7" id="ich-Rq-lzg"/>
+                            <constraint firstItem="OCY-zR-mfN" firstAttribute="top" secondItem="4hw-zy-M88" secondAttribute="bottom" constant="17" id="ngv-Zp-EAT"/>
+                            <constraint firstItem="cYU-qP-cgw" firstAttribute="top" secondItem="4hw-zy-M88" secondAttribute="bottom" constant="17" id="vCL-81-Kge"/>
+                            <constraint firstItem="5VF-GW-08j" firstAttribute="centerY" secondItem="raI-XD-tph" secondAttribute="centerY" constant="-2.5" id="z49-vH-td0"/>
                         </constraints>
                     </view>
                     <connections>
@@ -281,7 +270,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="75B-W0-a8Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2336.6197183098593" y="528.75"/>
+            <point key="canvasLocation" x="2335.5633802816901" y="526.875"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GW4-vB-GQd">
