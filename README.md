@@ -1,5 +1,7 @@
 # iOS-SimulatorDemo
 
+> **Note: This Sample Project is developed based on iOS SDK v3.5.1, an update version for iOS SDK v4.0 will be published soon.**
+
 ## Introduction
 
 This demo is designed for you to learn how to use the `DJISimulator` in your Xcode project using DJI Mobile SDK. With the help of Virtual Stick control, you can input Virtual Stick flight control data and check the changes of simulator state in real time.
