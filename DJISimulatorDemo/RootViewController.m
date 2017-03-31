@@ -26,16 +26,8 @@
 {
     [super viewDidAppear:animated];
     
-    NSString* appKey = @""; //TODO: Please enter your App Key here
-    
-    if ([appKey length] == 0) {
-        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
-        [DemoUtility showAlertViewWithTitle:nil message:@"Please enter your App Key" cancelAlertAction:cancelAction defaultAlertAction:nil viewController:self];
-    }
-    else
-    {
-        [DJISDKManager registerApp:appKey withDelegate:self];
-    }
+    //Please enter the App Key in info.plist file to register the app.
+    [DJISDKManager registerAppWithDelegate:self];
     
     if(self.product){
         [self updateStatusBasedOn:self.product];
@@ -63,7 +55,7 @@
 
 #pragma mark - DJISDKManager Delegate Methods
 
-- (void)sdkManagerDidRegisterAppWithError:(NSError *)error
+- (void)appRegisteredWithError:(NSError *)error
 {
     if (!error) {
         
@@ -79,10 +71,11 @@
     
 }
 
-- (void)sdkManagerProductDidChangeFrom:(DJIBaseProduct *)oldProduct to:(DJIBaseProduct *)newProduct
+#pragma mark DJIBaseProductDelegate Method
+- (void)productConnected:(DJIBaseProduct *)product
 {
-    if (newProduct) {
-        self.product = newProduct;
+    if (product) {
+        self.product = product;
         [self.connectButton setEnabled:YES];
         
     } else {
@@ -96,12 +89,13 @@
             }
         }];
         [DemoUtility showAlertViewWithTitle:nil message:message cancelAlertAction:cancelAction defaultAlertAction:backAction viewController:self];
-
+        
         [self.connectButton setEnabled:NO];
         self.product = nil;
     }
     
-    [self updateStatusBasedOn:newProduct];
+    [self updateStatusBasedOn:product];
+
 }
 
 - (IBAction)onConnectButtonClicked:(id)sender {

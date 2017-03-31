@@ -13,22 +13,11 @@
 		A492F65E1D081720008C3159 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A492F65C1D081720008C3159 /* Main.storyboard */; };
 		A492F6601D081720008C3159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A492F65F1D081720008C3159 /* Assets.xcassets */; };
 		A492F6631D081720008C3159 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A492F6611D081720008C3159 /* LaunchScreen.storyboard */; };
-		A492F66E1D081720008C3159 /* DJISimulatorDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A492F66D1D081720008C3159 /* DJISimulatorDemoTests.m */; };
 		A492F6921D0821BA008C3159 /* DemoUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A492F6911D0821BA008C3159 /* DemoUtility.m */; };
 		A4FA3B291D12B3EF00B0DDB5 /* VirtualStickView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FA3B261D12B3EF00B0DDB5 /* VirtualStickView.m */; };
 		A4FA3B2A1D12B3EF00B0DDB5 /* DJISimulatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FA3B281D12B3EF00B0DDB5 /* DJISimulatorViewController.m */; };
 		DB06E0B7E4D0CC2DF40F610E /* libPods-DJISimulatorDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C518C5D84429B5BE525CB11 /* libPods-DJISimulatorDemo.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A492F66A1D081720008C3159 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A492F6481D081720008C3159 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A492F64F1D081720008C3159;
-			remoteInfo = DJISimulatorDemo;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		A492F67D1D0817B4008C3159 /* Embed Frameworks */ = {
@@ -56,7 +45,6 @@
 		A492F65F1D081720008C3159 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A492F6621D081720008C3159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A492F6641D081720008C3159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A492F6691D081720008C3159 /* DJISimulatorDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DJISimulatorDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A492F66D1D081720008C3159 /* DJISimulatorDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJISimulatorDemoTests.m; sourceTree = "<group>"; };
 		A492F66F1D081720008C3159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A492F6901D0821BA008C3159 /* DemoUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoUtility.h; sourceTree = "<group>"; };
@@ -74,13 +62,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB06E0B7E4D0CC2DF40F610E /* libPods-DJISimulatorDemo.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A492F6661D081720008C3159 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				A492F6501D081720008C3159 /* DJISimulatorDemo.app */,
-				A492F6691D081720008C3159 /* DJISimulatorDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -195,24 +175,6 @@
 			productReference = A492F6501D081720008C3159 /* DJISimulatorDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A492F6681D081720008C3159 /* DJISimulatorDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A492F6751D081720008C3159 /* Build configuration list for PBXNativeTarget "DJISimulatorDemoTests" */;
-			buildPhases = (
-				A492F6651D081720008C3159 /* Sources */,
-				A492F6661D081720008C3159 /* Frameworks */,
-				A492F6671D081720008C3159 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A492F66B1D081720008C3159 /* PBXTargetDependency */,
-			);
-			name = DJISimulatorDemoTests;
-			productName = DJISimulatorDemoTests;
-			productReference = A492F6691D081720008C3159 /* DJISimulatorDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -224,10 +186,6 @@
 				TargetAttributes = {
 					A492F64F1D081720008C3159 = {
 						CreatedOnToolsVersion = 7.2;
-					};
-					A492F6681D081720008C3159 = {
-						CreatedOnToolsVersion = 7.2;
-						TestTargetID = A492F64F1D081720008C3159;
 					};
 				};
 			};
@@ -245,7 +203,6 @@
 			projectRoot = "";
 			targets = (
 				A492F64F1D081720008C3159 /* DJISimulatorDemo */,
-				A492F6681D081720008C3159 /* DJISimulatorDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,13 +215,6 @@
 				A492F6631D081720008C3159 /* LaunchScreen.storyboard in Resources */,
 				A492F6601D081720008C3159 /* Assets.xcassets in Resources */,
 				A492F65E1D081720008C3159 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A492F6671D081720008C3159 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +248,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		DCE6007EC61735B359036ED5 /* [CP] Copy Pods Resources */ = {
@@ -332,23 +282,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A492F6651D081720008C3159 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A492F66E1D081720008C3159 /* DJISimulatorDemoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A492F66B1D081720008C3159 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A492F64F1D081720008C3159 /* DJISimulatorDemo */;
-			targetProxy = A492F66A1D081720008C3159 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A492F65C1D081720008C3159 /* Main.storyboard */ = {
@@ -482,32 +416,6 @@
 			};
 			name = Release;
 		};
-		A492F6761D081720008C3159 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = DJISimulatorDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.DJISimulatorDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DJISimulatorDemo.app/DJISimulatorDemo";
-			};
-			name = Debug;
-		};
-		A492F6771D081720008C3159 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = DJISimulatorDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.DJISimulatorDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DJISimulatorDemo.app/DJISimulatorDemo";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -525,15 +433,6 @@
 			buildConfigurations = (
 				A492F6731D081720008C3159 /* Debug */,
 				A492F6741D081720008C3159 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A492F6751D081720008C3159 /* Build configuration list for PBXNativeTarget "DJISimulatorDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A492F6761D081720008C3159 /* Debug */,
-				A492F6771D081720008C3159 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
