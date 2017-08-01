@@ -186,6 +186,7 @@
 				TargetAttributes = {
 					A492F64F1D081720008C3159 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 7UL3LRJL93;
 					};
 				};
 			};
@@ -391,12 +392,12 @@
 			baseConfigurationReference = A0365E1E627859A62E912C5B /* Pods-DJISimulatorDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7UL3LRJL93;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = DJISimulatorDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dji.simulatordemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dji.simulatordemo5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -406,12 +407,12 @@
 			baseConfigurationReference = DC939B20A16373ED16B06447 /* Pods-DJISimulatorDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7UL3LRJL93;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = DJISimulatorDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dji.simulatordemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dji.simulatordemo5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
