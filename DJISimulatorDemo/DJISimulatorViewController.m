@@ -250,7 +250,7 @@
         }
         else
         {
-            [self setXVelocity:-dir.y andYVelocity:dir.x];
+            [self setXVelocity:dir.x andYVelocity:dir.y];
         }
     }
 }
@@ -264,8 +264,8 @@
 }
 
 -(void) setXVelocity:(float)x andYVelocity:(float)y {
-    self.mXVelocity = x * 15.0;
-    self.mYVelocity = y * 15.0;
+    self.mXVelocity = x * 10.0;
+    self.mYVelocity = y * 10.0;
     [self updateVirtualStick];
 }
 
